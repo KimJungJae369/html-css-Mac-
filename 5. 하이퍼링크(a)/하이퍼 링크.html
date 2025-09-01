@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이퍼 링크</title>
+</head>
+<body>
+
+    <!-- 
+        하이퍼 링크<a>
+        = 다른 웹 페이지로 이동할 수 있는 링크를 만들 때 사용
+        = a(anchor) : 하이퍼 링크를 만들 때 사용
+        = href(Hypertext REFerence) : 이동할 페이지의 URL을 지정
+        = target : 링크를 클릭했을 때 이동할 방법을 지정
+            - _self : 현재 창에서 링크를 엽니다
+            - _blank : 새 창에서 링크를 엽니다
+        = 링크 텍스트 : 사용자가 클릭할 수 있는 텍스트
+
+        사용법
+        <a href="URL" target="_blank">링크 텍스트</a>
+    -->
+
+    <h3>텍스트에 링크걸기</h3>
+        <ul>
+            <li><a href="page1.html" target="_self">인터넷이란?</a></li>
+            <li><a href="page2.html" target="_blank">웹이란</a></li>
+            <li><a href="page3.html">HTML이란</a></li>
+            <li><a href="page4.html">인포앤북 출판사</a></li>
+        </ul>
+
+    <h3>이미지에 링크걸기</h3>
+
+    <ul>
+        <li>
+            <a href="page4.html">
+                <img src="img/css.png" alt="css란">
+            </a>
+        </li>
+
+        <li>
+            <a href="img/logo.png">
+                <img src="img/logo.png" alt="인포앤북">
+            </a>
+        </li>
+    </ul>
+    
+</body>
+</html>

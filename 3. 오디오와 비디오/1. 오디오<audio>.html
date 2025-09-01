@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오디오(audio)</title>
+</head>
+<body>
+
+    <!-- 
+        1. <audio>
+        = 오디오를 재생할 수 있는 컨트롤을 제공하는 태그
+        = 속성
+            - controls : 오디오 컨트롤을 표시
+            - autoplay : 페이지가 로드될 때 자동으로 재생
+            - loop : 오디오가 끝나면 자동으로 다시 재생 / 무한반복
+            - muted : 음소거
+            - preload : 페이지가 로드될 때 오디오 파일을 로드할지 여부
+            - src : 오디오 파일의 경로
+
+        2. <source>(소스 : 원천)
+        = 여러 개의 소스를 지정할 수 있는 태그
+        = 속성
+            - src : 소스 파일의 경로
+            - type : 소스(오디오 / 비디오) 파일의 타입
+    -->
+
+    <audio controls autoplay loop muted preload="auto">
+        <source src="audio/sound-design-elements-sfx-ps-022-302865.mp3" type="audio/mp3">
+    </audio>
+    
+</body>
+</html>
