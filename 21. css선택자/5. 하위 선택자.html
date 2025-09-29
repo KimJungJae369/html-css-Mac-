@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하위 선택자</title>
+    <style>
+        #main h3{
+            border-left: 8px solid orange;
+            padding-left: 20px;
+        }
+
+        #main p{
+            line-height: 180%;
+        }
+
+        #intro span{
+            font-weight: 900;
+            color: orangered;
+        }
+
+        #intro{
+            border: 1px solid green;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        하위 선택자
+        = 특정 요소의 하위에 있는 요소들을 선택
+        = '하위 선택자'를 사용하면 HTML 태그의 선택자의 개수를 상당 부분 줄일 수 있어 CSS 코드가 간결하고 가독성이 좋아진다
+        = '공백'으로 표현
+        = 예) div p { color: red; } -> div 요소의 하위에 있는 p 요소를 선택
+    -->
+
+    <div id="main">
+        <h3>Lorem</h3>
+        <p>
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            - Impedit ea laboriosam beatae tenetur vero ad cupiditate obcaecati distinctio iste nostrum <br>
+            - quod repellat sapiente aspernatur, cumque molestias atque veritatis! Vitae, est!<br>
+        </p>
+    </div>
+
+    <div id="intro">
+        <h3>Lorem</h3>
+        <p>
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            - Impedit ea laboriosam beatae tenetur vero ad cupiditate obcaecati distinctio iste nostrum <br>
+            - quod repellat sapiente aspernatur, <span>cumque molestias atque veritatis!</span> Vitae, est! <br>
+        </p>
+
+        <h3>Lorem</h3>
+        <p>
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            - Impedit ea laboriosam beatae tenetur vero ad cupiditate obcaecati distinctio iste nostrum <br>
+            - quod repellat sapiente aspernatur, <span>cumque molestias atque veritatis!</span> Vitae, est!<br>
+        </p>
+    </div>
+    
+</body>
+</html>

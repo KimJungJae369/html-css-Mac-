@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자의 기본</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: green;
+        }
+        /* 전체 선택자 */
+
+        body{
+            color: #444;
+        }
+
+        h2{
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+
+        p:nth-child(2){
+            line-height: 150%;
+            font-size: 18px;
+        }
+
+        span{
+            font-weight: 900;
+            color: red;
+        }
+        /* 그룹 선택자 */
+
+        h2,h3{
+            text-align: center;
+        }
+
+        p,ul{
+            font-size: 20px;
+        }
+        /* 그룹 선택자 */
+
+        p{
+            line-height: 150%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        선택자의 기본
+        1) *(전체 선택자) : html요소 전체를 선택하는 데 사용
+        2) 태그 선택자 : p, div, span..등 태그 선택자는 해당 태그를 가진 모든 요소를 선택
+        3) 그룹 선택자 : 여러 선택자를 그룹으로 묵는데 사용 / 그룹 선택자에서 각 선택자를 콤마(,)로 구분 
+            ex) h2,h3{속성 : 속성값;}
+    -->
+
+    <h1>전체선택자</h1>
+    <p>
+        1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo facere, soluta quae qui quaerat voluptatem unde officiis dolor minima fugiat tempora officia, voluptas beatae possimus illo impedit eius? Voluptates!
+        <br>
+        2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eaque nam cum aut, dolor dolorem eveniet minima facere repellat commodi quod laboriosam est, vitae laborum saepe. Voluptates quidem numquam saepe.
+    </p>
+    
+    <br><br><hr> <br><br>
+
+    <h2>태그 선택자</h2>
+    <p>
+        1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo facere, soluta quae qui quaerat voluptatem unde officiis dolor minima fugiat tempora officia, voluptas beatae possimus illo impedit eius? Voluptates!
+        <br>
+        2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eaque nam cum aut, dolor dolorem eveniet minima facere repellat commodi quod laboriosam est, vitae laborum saepe. <span> Voluptates quidem numquam saepe.</span>
+    </p>
+
+    <br><br><hr> <br><br>
+
+    <h3>그룹 선택자</h3>
+    <h4>lorem</h4>
+    <p>
+        1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo facere, soluta quae qui quaerat voluptatem unde officiis dolor minima fugiat tempora officia, voluptas beatae possimus illo impedit eius? Voluptates!
+        <br>
+        2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eaque nam cum aut, dolor dolorem eveniet minima facere repellat commodi quod laboriosam est, vitae laborum saepe. Voluptates quidem numquam saepe.
+    </p>
+    <ul>
+        <li> Lorem ipsum</li>
+        <li> Lorem ipsum</li>
+        <li> Lorem ipsum</li>
+    </ul>
+</body>
+</html>

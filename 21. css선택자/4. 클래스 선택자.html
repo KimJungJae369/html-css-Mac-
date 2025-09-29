@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클래스 선택자</title>
+    <style>
+        .green_bold{
+            color: green;
+            font-weight: bold;
+        }
+
+        .red_underline{
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        클래스 선택자
+        = 웹 페이지에서 두 군데 이상의 특정 영역을 선택하여 CSS로 꾸미고자 할때 사용
+        = 즉 html에 특정 요소를 지정하기 위해 사용
+        = 'id 선택자'가 하나의 특정 영역을 선택하는 데 반하여 '클래스 선택자'는 여러 군데의 영역을 선택할 수 있다
+    -->
+
+    <h1>Loem</h1>
+    <p>
+        Lorem ipsum dolor sit amet,<span class="green_bold"> consectetur adipisicing elit</span>. Exercitationem fugit doloribus magni <span class="green_bold">laudantium corporis quidem nam</span>, deleniti repudiandae necessitatibus ratione architecto officiis reprehenderit recusandae magnam rerum? Blanditiis ullam architecto unde!
+    </p>
+    <hr>
+    <h1>Loem</h1>
+    <p>
+        Lorem ipsum dolor sit amet,<span class="red_underline"> consectetur adipisicing elit</span>. Exercitationem fugit doloribus magni <span class="red_underline">laudantium corporis quidem nam</span>, deleniti repudiandae necessitatibus ratione architecto officiis reprehenderit recusandae magnam rerum? Blanditiis ullam architecto unde!
+    </p>
+
+    <ul>
+        <li><span class="green_bold">Green Bold Text</span></li>
+        <li><span class="red_underline">Red Underline Text</span></li>
+    </ul>
+    
+</body>
+</html>
