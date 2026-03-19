@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float속성</title>
+    <style>
+        div{
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        #a, #b{
+            background-color: green;
+        }
+
+        #c{
+            float: right;
+            background-color: red;
+        }
+
+        #d{
+            float: left;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        float-left는 잘 들어갔지만 right값이 밑으로 떨어지는 이유
+        1. 부모 요소의 너비
+        = 부모의 요소의 너비가 자식 요소의 너비보다 작으면 'float-right'이 밑으로 떨어지는 현상이 발생
+
+        2. 다른 요소와의 충돌
+        = 'float-left'와 'float-right'이 서로 충돌하여 'float-right'이 밑으로 떨어지는 현상이 발생
+
+        3. 정렬순서
+        = HTML 구조에서 right가 적용된 요소가 left보다 나중에 위치하면 의도적으로 나오지 않는다
+
+        4, CSS속성
+        = clear:both가 적용되면 아래로 떨어진다
+
+        5. 박스모델
+        = 마진, 패딩, 보더 등으로 인해 요소의 실체 크기가 변경되어 float요소가 예상치 못한 곳으로 떨어진다
+    --> 
+
+    <div id="a">AAA</div>
+    <div id="b">BBB</div>
+
+    <div id="c">CCC</div>
+    <div id="d">DDD</div>
+    
+</body>
+</html>
